@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #FFFFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="22.0" layoutY="207.0" prefHeight="27.0" prefWidth="130.0" text="O-NAME">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="248.0" prefHeight="27.0" prefWidth="130.0" text="DEPART:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="331.0" prefHeight="27.0" prefWidth="130.0" text="PAY-DATE:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="288.0" prefHeight="27.0" prefWidth="130.0" text="ALLOWANCE:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="164.0" prefHeight="27.0" prefWidth="130.0" text="G-NAME:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="121.0" prefHeight="27.0" prefWidth="130.0" text="S-NAME:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="78.0" prefHeight="27.0" prefWidth="130.0" text="EMP ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_id" layoutX="164.0" layoutY="78.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_fn" layoutX="164.0" layoutY="121.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_ln" layoutX="172.0" layoutY="178.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_all" layoutX="164.0" layoutY="288.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_pay" layoutX="164.0" layoutY="331.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_dep" layoutX="164.0" layoutY="248.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tx_on" layoutX="164.0" layoutY="207.0" prefHeight="27.0" prefWidth="181.0" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" prefHeight="35.0" prefWidth="484.0" text="ALLOWANCE MANAGEMENT SYSTEM" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPrint" layoutX="411.0" layoutY="356.0" mnemonicParsing="false" onAction="#onButtonPrint" prefHeight="27.0" prefWidth="75.0" text="Print" />
+   </children>
+</AnchorPane>

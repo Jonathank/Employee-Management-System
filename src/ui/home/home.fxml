@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.home.HomeController">
+   <children>
+      <AnchorPane prefHeight="668.0" prefWidth="997.0">
+         <children>
+            <AnchorPane layoutX="-19.0" layoutY="-13.0" prefHeight="756.0" prefWidth="562.0" styleClass="nav-form" stylesheets="@../../css/dashboard-style.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="21.0" layoutY="378.0" prefHeight="45.0" prefWidth="540.0" text="EMPLOYEE MANAGEMENT " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="11.0" layoutY="160.0" prefHeight="80.0" prefWidth="550.0" text="WELCOME" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="59.0" />
+                     </font>
+                  </Label>
+                  <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="550.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="EMPLOYEE ">
+                        <items>
+                              <Menu mnemonicParsing="false" text="EMPLOYEE DETAILS">
+                                <items>
+                                <MenuItem mnemonicParsing="false" onAction="#loademp" text="MANAGE EMPLOYEES" />
+                                </items>
+                              </Menu>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <Menu mnemonicParsing="false" text="EMPLOYEE ALLOWANCES">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#loadsetallowancce" text="SET ALLOWANCES" />
+                                    <MenuItem mnemonicParsing="false" onAction="#loadpayallowance" text="PAY ALLOWANCES" />
+                                </items>
+                              </Menu>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <Menu mnemonicParsing="false" text="EMPLOYEE BANK DETAILS">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#loadbankdetails" text="SET BANK DETAILS" />
+                                </items>
+                              </Menu>
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="DEPARTMENTS">
+                        <items>
+                              <MenuItem mnemonicParsing="false" onAction="#loadDepartment" text="MANAGE DEPARTMENTS" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="PAYROLL">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#loadpayroll" text="MAKE PAYMENTS" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="ATTENDANCE">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#loadattendance" text="TRACE ATTENDANCE" />
+                          </items>
+                        </Menu>
+                    </menus>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuBar>
+                  <Label alignment="CENTER" layoutX="165.0" layoutY="456.0" prefHeight="45.0" prefWidth="275.0" text="SYSTEM " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="545.0" layoutY="42.0" prefHeight="701.0" prefWidth="738.0" styleClass="shadow" stylesheets="@../../css/dashboard-style.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="5.0" layoutY="72.0" prefHeight="80.0" prefWidth="727.0" text="SYOVA SEEDS(U) LTD" textFill="#00a429">
+                     <font>
+                        <Font size="66.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="200.0" layoutX="258.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/download1.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="2.0" layoutY="158.0" prefHeight="80.0" prefWidth="727.0" text="(EAST AFRICAN SEEDS, AGRISCOPE, SILVERORK)" textFill="RED">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="121.0" fitWidth="300.0" layoutX="215.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/sld2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnlogout" alignment="CENTER" layoutX="591.0" layoutY="634.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="103.0" styleClass="logout" stylesheets="@../../css/dashboard-style.css" text="LOGOUT">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

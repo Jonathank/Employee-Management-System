@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.employee.EmployeeController">
+   <children>
+      <AnchorPane prefHeight="687.0" prefWidth="1359.0" styleClass="nav-form" stylesheets="@../../css/dashboard-style.css">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="90.0" prefHeight="548.0" prefWidth="614.0" stylesheets="@../../css/dashboard-style.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass> 
+               <children>
+                  <Label fx:id="labelid" layoutX="15.0" layoutY="31.0" text="EMPLOYEE ID">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="81.0" text="SUR NAME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="141.0" text="GIVEN NAME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="199.0" text="OTHER NAME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="264.0" text="GENDER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="330.0" layoutY="260.0" text="BIRTH DATE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="324.0" text="ADDRESS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="320.0" layoutY="320.0" text="CONTACT">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="382.0" text="EMAIL">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="323.0" layoutY="378.0" text="DEPARTMENT">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="438.0" text="JOB TITLE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="320.0" layoutY="438.0" text="ENTRY DATE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="495.0" text="SALARY">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="328.0" layoutY="495.0" text="STATUS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="360.0" layoutY="11.0" prefHeight="208.0" prefWidth="239.0" stylesheets="@../../css/dashboard-style.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-bg" />
+                     </styleClass>
+                     <children>
+                        <ImageView fx:id="myimageview" fitHeight="183.0" fitWidth="224.0" layoutX="24.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/SIGNUP3.png" />
+                           </image></ImageView>
+                        <Button fx:id="btnupload" layoutX="49.0" layoutY="189.0" mnemonicParsing="false" onAction="#uploadphoto" prefHeight="25.0" prefWidth="142.0" styleClass="add-btn" stylesheets="@../../css/dashboard-style.css" text="UPLOAD PHOTO" />
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="txtid" disable="true" editable="false" layoutX="131.0" layoutY="25.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtsname" layoutX="131.0" layoutY="81.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtgname" layoutX="131.0" layoutY="135.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtoname" layoutX="131.0" layoutY="193.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtaddress" layoutX="131.0" layoutY="314.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtemail" layoutX="131.0" layoutY="372.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtjob" layoutX="131.0" layoutY="432.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtsalary" layoutX="131.0" layoutY="489.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtcontact" layoutX="439.0" layoutY="314.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="combogender" layoutX="131.0" layoutY="254.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css" />
+                  <ComboBox fx:id="combodepart" layoutX="439.0" layoutY="372.0" onMouseClicked="#getdepartment" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css" />
+                  <ComboBox fx:id="combostatus" layoutX="439.0" layoutY="489.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css" />
+                  <DatePicker fx:id="dob_datepicker" layoutX="439.0" layoutY="254.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css" />
+                  <DatePicker fx:id="entry_datepicker" layoutX="439.0" layoutY="432.0" prefHeight="32.0" prefWidth="168.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="633.0" layoutY="90.0" prefHeight="548.0" prefWidth="725.0" stylesheets="@../../css/dashboard-style.css">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <ScrollPane layoutX="4.0" layoutY="7.0">
+                     <content>
+                        <TableView fx:id="employeetable" prefHeight="539.0" prefWidth="715.0" stylesheets="@../../css/dashboard-style.css">
+                          <columns>
+                            <TableColumn fx:id="TC_ID" prefWidth="78.0" text="EMP ID" />
+                            <TableColumn fx:id="TC_FN" prefWidth="72.0" text="FNAME" />
+                              <TableColumn fx:id="TC_GN" prefWidth="75.0" text="GNAME" />
+                              <TableColumn fx:id="TC_ON" prefWidth="73.0" text="ONAME" />
+                              <TableColumn fx:id="TC_G" prefWidth="74.0" text="GENDER" />
+                              <TableColumn fx:id="TC_DEP" prefWidth="91.0" text="DEPARTMENT" />
+                              <TableColumn fx:id="TC_JOB" prefWidth="79.0" text="JOBTITLE" />
+                              <TableColumn fx:id="TC_CON" prefWidth="85.0" text="CONTACT" />
+                              <TableColumn fx:id="TC_STATUS" prefWidth="86.0" text="STATUS" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnsave" layoutX="14.0" layoutY="657.0" mnemonicParsing="false" onAction="#buttonsave" prefHeight="32.0" prefWidth="86.0" styleClass="add-btn" stylesheets="@../../css/dashboard-style.css" text="SAVE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnupdate" layoutX="352.0" layoutY="657.0" mnemonicParsing="false" onAction="#updatebutton" prefHeight="32.0" prefWidth="86.0" styleClass="update-btn" stylesheets="@../../css/dashboard-style.css" text="UPDATE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnclear" layoutX="184.0" layoutY="657.0" mnemonicParsing="false" onAction="#clearbutton" prefHeight="32.0" prefWidth="86.0" styleClass="clear-btn" stylesheets="@../../css/dashboard-style.css" text="CLEAR">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btndelete" layoutX="518.0" layoutY="657.0" mnemonicParsing="false" onAction="#deletebutton" prefHeight="32.0" prefWidth="86.0" styleClass="delete-btn" stylesheets="@../../css/dashboard-style.css" text="DELETE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="-2.0" prefHeight="85.0" prefWidth="1372.0" styleClass="top-form" stylesheets="@../../css/dashboard-style.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="-1.0" layoutY="7.0" prefHeight="75.0" prefWidth="1372.0" text="EMPLOYEE REGISTRATION FORM" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtsearch" layoutX="59.0" layoutY="42.0" prefHeight="28.0" prefWidth="104.0" styleClass="textfield" stylesheets="@../../css/dashboard-style.css">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnsearch" defaultButton="true" layoutX="174.0" layoutY="43.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="103.0" styleClass="add-btn" stylesheets="@../../css/dashboard-style.css" text="SEARCH" />
+                  <Label layoutX="34.0" layoutY="46.0" prefHeight="20.0" prefWidth="23.0" text="ID" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

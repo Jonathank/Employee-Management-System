@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.employee.bankdetails.BankController">
+   <children>
+      <AnchorPane prefHeight="703.0" prefWidth="924.0" styleClass="nav-form" stylesheets="@../../../css/dashboard-style.css">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="395.0" prefHeight="300.0" prefWidth="934.0" stylesheets="@../../../css/dashboard-style.css">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+               </styleClass>
+               <children>
+                  <TableView fx:id="table" layoutX="2.0" layoutY="10.0" prefHeight="287.0" prefWidth="926.0">
+                    <columns>
+                      <TableColumn fx:id="tc_id" prefWidth="248.99998474121094" text="EMPLOYEE ID" />
+                      <TableColumn fx:id="tc_acno" prefWidth="352.0" text="ACCOUNT NUMBER" />
+                        <TableColumn fx:id="tc_aname" prefWidth="368.0" text="ACCOUNT NAME" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnclear" layoutX="710.0" layoutY="348.0" mnemonicParsing="false" onAction="#clearbutton" prefHeight="35.0" prefWidth="74.0" styleClass="clear-btn" stylesheets="@../../../css/dashboard-style.css" text="CLEAR" />
+            <Label alignment="CENTER" layoutX="58.0" layoutY="236.0" prefHeight="27.0" prefWidth="84.0" text="EMP ID" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="58.0" layoutY="352.0" prefHeight="27.0" prefWidth="129.0" text="ACC-NAME" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="58.0" layoutY="293.0" prefHeight="27.0" prefWidth="101.0" text="ACC-NO" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-6.0" prefHeight="84.0" prefWidth="958.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" layoutX="4.0" layoutY="15.0" prefHeight="55.0" prefWidth="942.0" text="EMPLOYEE BANK DETAILS" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="100.0" prefHeight="96.0" prefWidth="275.0" stylesheets="@../../../css/dashboard-style.css">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+               </styleClass>
+               <children>
+                  <Button fx:id="btnsearch" defaultButton="true" layoutX="172.0" layoutY="59.0" mnemonicParsing="false" onAction="#searchbutton" prefHeight="26.0" prefWidth="84.0" styleClass="clear-btn" stylesheets="@../../../css/dashboard-style.css" text="SEARCH" />
+                  <TextField fx:id="txtsearch" layoutX="72.0" layoutY="59.0" prefHeight="25.0" prefWidth="94.0" styleClass="textfield" stylesheets="@../../../css/dashboard-style.css" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="59.0" prefHeight="26.0" prefWidth="55.0" text="EMP ID">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="26.0" prefWidth="237.0" text="EMPLOYEE ID SEARCH">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="687.0" layoutY="93.0" prefHeight="231.0" prefWidth="251.0" stylesheets="@../../../css/dashboard-style.css">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+               </styleClass>
+               <children>
+                  <ImageView fx:id="myimageview" fitHeight="213.0" fitWidth="228.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../photos/SIGNUP3.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txtid" layoutX="221.0" layoutY="228.0" prefHeight="35.0" prefWidth="258.0" styleClass="textfield" stylesheets="@../../../css/dashboard-style.css" />
+            <Button fx:id="btnsave" layoutX="840.0" layoutY="348.0" mnemonicParsing="false" onAction="#savebutton" prefHeight="35.0" prefWidth="74.0" styleClass="clear-btn" stylesheets="@../../../css/dashboard-style.css" text="SAVE" />
+            <TextField fx:id="txtaccno" layoutX="221.0" layoutY="285.0" prefHeight="35.0" prefWidth="258.0" styleClass="textfield" stylesheets="@../../../css/dashboard-style.css" />
+            <TextField fx:id="txtaccname" layoutX="221.0" layoutY="348.0" prefHeight="35.0" prefWidth="258.0" styleClass="textfield" stylesheets="@../../../css/dashboard-style.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
