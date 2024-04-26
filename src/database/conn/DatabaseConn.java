@@ -16,7 +16,7 @@ private static Connection con = null;
 	static {
 		String url = "jdbc:mysql://localhost:3306/employee_managementsystem";
 		String user = "root";
-		String pass ="Jnana_2002";
+		String pass ="";
 		
 		try {
 			
