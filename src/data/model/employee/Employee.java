@@ -5,7 +5,7 @@ import database.employee.EmployeeUtils;
 
 /**
  * 
- * @author JONATHAN K
+ * @author JONATHAN 
  *
  */
 public class Employee {
