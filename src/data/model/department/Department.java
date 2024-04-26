@@ -1,7 +1,7 @@
 package data.model.department;
 /**
  * 
- * @author KASULE PAUL
+ * @author JONATHAN
  *
  */
 
