@@ -4,7 +4,7 @@ package data.model.employee.attendence;
 import java.time.LocalTime;
 /**
  * 
- * @author KASULE PAUL
+ * @author JONATHAN
  *
  */
 public class EmployeeAttendance implements Attendence {
