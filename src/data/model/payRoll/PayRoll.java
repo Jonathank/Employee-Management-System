@@ -4,7 +4,7 @@ package data.model.payRoll;
 
 /**
  * 
- * @author KASULE PAUL
+ * @author JONATHAN
  *
  */
 
