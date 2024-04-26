@@ -1,7 +1,7 @@
 package data.model.payRoll;
 /**
  * Handles tax reducations such as NSSF and PayAs you earn
- * @author KASULE PAUL
+ * @author JONATHAN
  *
  */
 
