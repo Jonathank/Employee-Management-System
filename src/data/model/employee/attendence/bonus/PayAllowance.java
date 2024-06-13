@@ -1,7 +1,7 @@
 package data.model.employee.attendence.bonus;
 /**
  * 
- * @author KASULE PAUL
+ * @author JONATHAN
  *
  */
 

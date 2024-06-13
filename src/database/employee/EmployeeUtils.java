@@ -22,7 +22,11 @@ import javafx.scene.control.Alert.AlertType;
 
 /**
  * 
+<<<<<<< HEAD
  * @author JONATHAN K
+=======
+ * @author JONATHAN
+>>>>>>> 9ff76d63643f785ae0d98cbbe55017e061751150
  *
  */
 
