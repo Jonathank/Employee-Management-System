@@ -22,7 +22,7 @@ import javafx.scene.control.Alert.AlertType;
 
 /**
  * 
- * @author KASULE PAUL
+ * @author JONATHAN K
  *
  */
 
